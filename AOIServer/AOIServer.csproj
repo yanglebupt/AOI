@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+	<LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;8600;8601;</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;8600;8601;</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AOICell\AOICell.csproj" />
+    <ProjectReference Include="..\AOIProtocol\AOIProtocol.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Logger">
+      <HintPath>..\..\YLCommon\Logger\bin\Release\netstandard2.1\Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="Network">
+      <HintPath>D:\Unity-Learn\QiQiKe\Packages\Assets\Modules\Network\Network.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+	
+</Project>

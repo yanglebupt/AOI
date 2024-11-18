@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+	<LangVersion>9.0</LangVersion>
+    <BaseOutputPath>D:\Unity-Learn\QiQiKe\Packages\Assets\Scenes\03-AOI\AOIProtocol\</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MessagePack" Version="1.7.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Network">
+      <HintPath>D:\Unity-Learn\QiQiKe\Packages\Assets\Modules\Network\Network.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+	
+</Project>
